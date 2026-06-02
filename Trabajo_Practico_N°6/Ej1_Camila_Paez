@@ -1,0 +1,17 @@
+Ejercicio1
+	//Una tienda de hardware importa componentes informáticos. Al precio base de un producto
+	//ingresado se le debe sumar un 21% de IVA. Luego, sobre ese nuevo subtotal,
+	//se le debe aplicar un recargo del 8% por tasas de aduana.
+	//Finalmente, la tienda realiza un descuento fijo del 5% sobre el total acumulado 
+	//si el cliente abona en efectivo.
+	Definir precio_base, impuestoIVA, recargo, descuento_por_efectivo Como Real;
+	Escribir "Ingrese el precio base del producto:";
+	Leer precio_base;
+	impuestoIVA= (precio_base*21) /100;
+	recargo= (impuestoIVA *8)/100;
+	Escribir "Con el IVA y el recargo el producto queda en:", recargo;
+	descuento_por_efectivo= (recargo*5) /100;
+	Escribir "Si abona en efectivo, el producto quedaria en:", descuento_por_efectivo;
+	
+
+FinAlgoritmo
